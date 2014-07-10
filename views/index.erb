@@ -1,0 +1,37 @@
+<article>
+  <header>
+    <img src="bell.jpg" alt="Bell" />
+    <h1>Ping</h1>
+    <h2>“Mr. Watson, Come here, I want to see you.”</h2>
+  </header>
+
+  <section class="pings">
+    <a href="/pingteacher" class="js-ping btn">Ping Teacher</a>
+    <a href="/pingassistant" class="js-ping btn">Ping Assistant</a>
+  </section>
+
+  <section class="instructions">
+    <h3>Setup</h3>
+    <p>There are few things you need to do before you use Ping. First off make sure you have the Blink(1) software running. </p>
+    <p>Next up, in the Blink(1) control panel click the tools tab and setup a url for the blink to listen to, you will want to make sure that the frequency is the fastest it will go (5 secs).</p>
+    <ul>
+      <li>If you are assisting use <code>http://ping.steer.me/assistant</code></li>
+      <li>If you are teaching use <code>http://ping.steer.me/teacher</code></li>
+    </ul>
+
+    <p>And finally, you need to create a pattern in the control panel. This can be anything you fancy but the patterns name must be either <code>teacher ping</code> or <code>assistant ping</code></p>
+
+    <h3>Bookmarklet</h3>
+    <p>Need to get someones attention faster!? Just drag and drop this bookmarklet into your favourites bar to contact either the teacher or assistant. </p>
+
+    <div class="bookmarklets">
+      <a class="btn btn-bookmarklet"href="javascript:(function(){var xhr = new XMLHttpRequest(); xhr.open('POST', 'http://ping.dev/pingteacher'); xhr.send(); })()">Ping Teacher</a>
+
+      <a class="btn btn-bookmarklet"href="javascript:(function(){var xhr = new XMLHttpRequest(); xhr.open('POST', 'http://ping.dev/pingassistant'); xhr.send(); })()">Ping Assistant</a>
+    </div>
+  </section>
+
+  <footer>
+    <small>Made by Sam for <span>Steer</span></small>
+  </footer>
+</article>

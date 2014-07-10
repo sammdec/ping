@@ -1,0 +1,116 @@
+@import "bourbon";
+@import "neat";
+@import "reset";
+@import "variables";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Cardo:400italic);
+
+
+body {
+  background: #fcfaf2;
+  font-family: "Open Sans", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #333333;
+}
+
+article {
+  @include outer-container;
+}
+
+header {
+  text-align: center;
+  font-family: "Cardo", serif;
+  font-style: italic;
+  margin: 42px 0;
+  img {
+    width: 350px;
+    border: 6px solid #ffffff;
+  }
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-family: "Cardo", serif;
+  font-style: italic;
+  font-size: 36px;
+  margin-bottom: 6px;
+  margin-top: 36px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin-bottom: 12px;
+}
+li {
+  margin-bottom: 6px;
+}
+
+.pings {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.btn {
+  border: 3px solid #172bae;
+  color: #172bae;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: all 0.1s ease-in;
+  &:hover {
+    background: #172bae;
+    color: #fcfaf2;
+  }
+
+  &.btn-bookmarklet {
+    background: #172bae;
+    color: #fcfaf2;
+    cursor: move;
+  }
+}
+
+.instructions {
+  margin-bottom: 42px;
+}
+
+code {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 16px;
+  background: #eeeeee;
+  padding: 1px 4px;
+}
+
+.bookmarklets {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+small {
+  font-size: 14px;
+  span {
+    color: #FF341A;
+    font-weight: 700;
+  }
+}
