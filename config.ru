@@ -3,7 +3,7 @@ require 'bundler'
 Bundler.require
 
 # redis
-$redis = Redis.new(url: 'redis://redistogo:edbe9b02722f3c3b6c02daed375f70bc@angelfish.redistogo.com:10415/ping')
+$redis = Redis.new(url: ENV['REDIS_URL'])
 
 # assets
 map '/assets' do
